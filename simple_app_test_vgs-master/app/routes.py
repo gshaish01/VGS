@@ -31,7 +31,7 @@ def forward():
 
 
     os.environ[
-        'HTTPS_PROXY'] = 'http://UShxsFJgSucAVYDhj4epQ1kF:2e9e0f97-45e4-4095-adce-bc523cd599ac@tntsvizavbe.sandbox.verygoodproxy.com:8080'
+        'HTTPS_PROXY'] = '{user:password}@tntsvizavbe.sandbox.verygoodproxy.com:8080'
     response = requests.post('https://echo.apps.verygood.systems/post',
                              json={'cvv': J_cvv, 'card_number': J_card_number, 'exp_date': J_exp_date },
                              verify='sandbox.pem')
