@@ -23,9 +23,9 @@ def forward():
                              json={'cvv': cc_cvv, 'card_number': cc_number, 'exp_date': cc_exp})
     #print(str(response_i.text))
     response_i=response_i.json()
-    J_card_number=(json.dumps(response_i['json']['card_number'], sort_keys=True, indent=4).strip('"'))
-    J_cvv=(json.dumps(response_i['json']['cvv'], sort_keys=True, indent=4).strip('"'))
-    J_exp_date=(json.dumps(response_i['json']['exp_date'], sort_keys=True, indent=4).strip('"'))
+    J_card_number=(json.dumps(response_i['json']['card_number'], indent=4).strip('"'))
+    J_cvv=(json.dumps(response_i['json']['cvv'],  indent=4).strip('"'))
+    J_exp_date=(json.dumps(response_i['json']['exp_date'],  indent=4).strip('"'))
 
 
 
